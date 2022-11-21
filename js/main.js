@@ -7,7 +7,7 @@ createApp({
     return {
         nome:"",
         cognome:"",
-        msg:"hello",
+        msg:"Ciao",
         imgs:"",
         
     };
@@ -15,8 +15,9 @@ createApp({
   },methods:{
     login(){
         this.imgs="imgs/angela-lopez-social-media-manager.jpg";
-        this.msg=`Ciao ${this.nome} ${this.cognome}`;
+        this.msg+=` ${this.nome} ${this.cognome}`;
     }
 }
-}).mount("#app")
+}).mount("#app");
+
 
