@@ -15,10 +15,12 @@ createApp({
     
   },methods:{
     login(){
+      if(this.nome!=="" && this.cognome!==""){
         this.msg="";
         this.btnClasses[0]="btn-danger";
         this.imgs="imgs/angela-lopez-social-media-manager.jpg";
         this.msg+=` ${this.nome} ${this.cognome}`;
+      }
     }
 }
 }).mount("#app");
